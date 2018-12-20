@@ -1,0 +1,143 @@
+@charset "utf-8";
+@import "base";
+// 自适应
+@media screen and (max-width:$ipad-width) {
+  .mod-index,.mod-case {
+    .panle{ margin: 0; }
+  }
+  .mod-about{
+    .about-container{
+      width: auto;
+    }
+    .flex-col6{
+      .item{
+        width: 33.3333%!important;
+      }
+    }
+  }
+  .mod-case{
+    .tags{
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  .mod-contact,.mod-serve{
+    .banner{
+      padding: 0 0 80px 0;
+      text-align: center;
+      &:after{
+        width: 90%;
+        height: 190px;
+        margin-left: -45%;
+        margin-top: -230px;
+      }
+      h3{
+        padding-left: 0;
+        font-size: 54px;
+      }
+      p{
+        float: none;
+        width: 80%;
+        padding: 0;
+        margin: 0 auto;
+        font-size: 14px;
+      }
+    }
+    .serve-item{
+      padding-left: 15px;
+      padding-right: 15px;
+      .box{
+        width: 100%;
+      }
+    }
+  }
+  .mod-case-show{
+    overflow: hidden;
+    .case-container{
+      width: auto;
+    }
+
+    .case-panle{
+      margin: 0;
+    }
+  }
+  .row-flex{
+    .item{
+      width: 100%!important;
+      a{
+        height:auto!important;
+        padding-bottom: 10px;
+        h2{
+          padding-top: 0;
+        }
+      }
+    }
+  }
+  .wrapper{
+    width: 100%;
+  }
+  .header .logo{
+    left: 15px;
+  }
+  #desktopNav,.i-gift {
+    display: none;
+  }
+  .nav-toggle {
+    display: block;
+  }
+  .mod-index{
+    .swiper{
+      height: 400px;
+    }
+    .swiper-pagination{ 
+      right: 0;
+      bottom: 10px!important;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width:$mob-width) {
+  .row-flex{
+    li{
+      width: 100%!important;
+      a{
+        height:auto!important;
+        padding-bottom: 16px!important;
+        font-size: 12px!important;
+      }
+    }
+  }
+  .wrapper{
+    width: 100%;
+  }
+  #desktopNav {
+    display: none;
+  }
+  .nav-toggle {
+    display: block;
+  }
+  .footer{
+    padding:10px;
+    .flink{
+      .tit{
+        font-size: 16px!important;
+      }
+    }
+    .copy{
+      .fa{ display: none}
+    }
+  }
+  .mod-index{
+    .swiper{
+      height: 200px;
+    }
+  }
+  .mod-about{
+    .flex-col6{
+      .item{
+        width: 50%!important;
+      }
+    }
+  }
+}
